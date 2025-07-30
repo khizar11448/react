@@ -4,20 +4,16 @@ import './style.css';
 function App() {
   const [count, setCount] = useState(0);
 
-  // Handler functions
-  const handleIncrement = () => setCount(count + 1);
-  const handleDecrement = () => setCount(count - 1);
-  const handleReset = () => setCount(0);
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
 
   return (
     <div className="container">
-      <h1>Simple Counter App</h1>
+      <h1>Counter App</h1>
       <p className="count">Count: {count}</p>
-
       <div className="buttons">
-        <button onClick={handleIncrement}>➕ Increment</button>
-        <button onClick={handleDecrement}>➖ Decrement</button>
-        <button onClick={handleReset}>🔁 Reset</button>
+        <button onClick={increment}>Increment</button>
+        <button onClick={decrement}>Decrement</button>
       </div>
     </div>
   );
