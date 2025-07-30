@@ -1,6 +1,6 @@
-function Promo() {
+function Promo(props) {
     return (
-        <div className="promo-section">
+        <div className="promo-section">,{props.firstname}
             <div>
                 <h1>Don't miss this deal!</h1>
                 </div>
